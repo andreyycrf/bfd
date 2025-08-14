@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem do dia</title>
+</head>
+<body>  
+    <button onclick="alert('bem-vindo!!');">Mensagem do dia</button>
+    <br>
+    <input class= "text" id="Mensagem"> 
+    <button onclick="mostrarMensagem()">Mostrar mensagem</button>
+
+    <input class= "text" id="segundo"> 
+    <button onclick="mostrarMensagem2()">Mostrar mensagem</button>
+    
+</body>
+    <script>
+        function mostrarMensagem() {
+            var msg = document.getElementById("Mensagem").value;
+            alert(msg);
+        }
+        function mostrarMensagem2() {
+            alert('${segundo.value}');
+        }
+
+    </script>
+
+
+</html>
