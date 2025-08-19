@@ -6,23 +6,13 @@
     <title>Ligar e Desligar</title>
 </head>
 <body>
-    <img src="pic_bulboff.gif" alt="bul" id="lampada">
-    <button onclick="Ligar" id="acender">Ligar</button>
-   
-    <button onclick="Desligar" id="apagar">Desligou</button>
+
+
+    <button onclick="document.getElementById('minha_imagem').src='./pic_bulbon.gif'">Ligar</button>
+    
+    <img id="minha_imagem" src="./pic_bulboff.gif" style="width: 100px;">
+
+    <button onclick="document.getElementById('minha_imagem').src='pic_bulboff.gif'">Desligou</button>
 </body>
-    <script>
-        var lampada = document.getElementById("lampada")
-        const onButton = document.getElementById('acender');
-    const offButton = document.getElementById('apagar');
-
-        function Ligar() {
-           lampada.scr = 'pic_bulbon.gif';
-            
-        }
-
-        function Desligar() {
-            lampada.scr = 'pic_bulboff.gif'
-        }
-    </script>
+    
 </html>
