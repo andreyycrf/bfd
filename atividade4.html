@@ -5,14 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ligar e Desligar</title>
 </head>
+<style>
+    button {
+        background-color: chocolate;
+        color: darkolivegreen;
+        font-size: 1.2rem;
+        padding: 10px 12px;
+        border-radius: 25px;
+        cursor: pointer;
+        text-align: center;
+        transition: 0.4s;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        
+    }
+    * {
+        text-align: center;
+    }
+</style>
 <body>
 
 
-    <button onclick="document.getElementById('minha_imagem').src='./pic_bulbon.gif'">Ligar</button>
+    <button class="center" onclick="document.getElementById('minha_imagem').src='./pic_bulbon.gif'">Ligar</button>
     
-    <img id="minha_imagem" src="./pic_bulboff.gif" style="width: 100px;">
+    <img class="center" id="minha_imagem" src="./pic_bulboff.gif" style="width: 100px;">
 
-    <button onclick="document.getElementById('minha_imagem').src='pic_bulboff.gif'">Desligou</button>
+    <button class="center" onclick="document.getElementById('minha_imagem').src='pic_bulboff.gif'">Desligou</button>
 </body>
     
 </html>

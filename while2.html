@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While</title>
+</head>
+<style>
+    * {
+        text-align: center;
+        
+    }
+</style>
+<body>
+    <h2>Somador:</h2>
+    <button onclick="coletarNumeros()">Iniciar</button>
+    <script>
+        function coletarNumeros() {
+       var numero;
+       var contador = 0
+       var soma = 0
+        do {
+       numero = Number(prompt("Digite um número (0 para sair): "));
+       
+       if (numero && numero  > 0) {
+        contador++;
+        soma += numero;
+       } 
+        } while (numero > 0);
+        
+    var media = soma / contador;
+       alert('Foram digitados: ' + contador + " numeros, a soma deles deu: " + soma + " e a média foi: " + media)
+        
+        }
+    </script>
+    
+</body>
+</html>
