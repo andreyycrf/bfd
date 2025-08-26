@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAST FM</title>
+    <link rel="stylesheet" href="/HTML STYLE/style.css">
+</head>
+<body>
+    <h1>A color pink</h1>
+    <p>This is a paragraph</p>
+
+        <div style="background-color: aqua;">
+            <h1>Título div 1</h1>
+            <p>Texto div 1</p>
+            <p>Texto div  1</p>
+        </div>
+        <div style="background-color: darkgrey;">
+            <h1>Titulo div 2</h1>
+            <p>Texto div 2</p>
+            <p>Texto  div 2</p>
+        </div>
+        <br>
+
+    <a href="http://last.fm/pt/" target="_blank">
+    <img src="https://paomortadela.com.br/uploads/2019/11/lastfm.jpg" alt="last">
+    </a> <br>
+    <a href="http://last.fm/pt/" target="_blank" >Scroblle da melhor forma!</a> <br>
+    <a href="malito:email@gmail.com">Enviar E-mail</a>
+
+    <table style="width: 100%;">
+        <tr>
+            <td>Primeiro Cabeçalho</td>
+            <td>Segundo Cabeçalho</td>
+        </tr>
+        <tr>
+            <td>Não é cabeçalho</td>
+            <td>Valor qualquer</td> 
+        </tr>
+    </table>
+    <p>Hello World</p>
+    <div>Hello World</div>
+
+    <nav>
+        <a href="https://letterboxd.com/" target="_blank">letterboxd</a>
+        <a href="https://br.pinterest.com/" target="_blank">pinterest</a>
+        <a href="https://www.roblox.com/pt" target="_blank">roblox</a>
+    </nav>
+
+    <p>Click the button to hide all elements with class name</p>
+
+    <button onclick="myFunction()">Hide Elements</button>
+
+    <h2 class="city">London</h2>
+    <p>London Bridge is falling down</p>
+
+    <h2 class="city">Paris</h2>
+    <p>Paris is the capital of France</p>
+
+    <h2 class="city">Tokyo</h2>
+    <p>Tokyo is the capital of Japan</p>
+    
+    <script>
+    function myFunction() {
+        var x = document.getElementsByClassName("city");
+        for (var i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+    }
+</script>
+
+
+</body>
+</html>
